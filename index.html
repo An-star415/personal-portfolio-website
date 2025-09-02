@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+         <img src="images\Ananya-design-power-name.gif" class="logo">
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+         </ul>
+    </nav>
+    <div class="header-text">
+        <p>Front-end Developer</p>
+        <h1>Hi,I am<span>Ananya Ghosh</span><br>From India</h1>
+
+    </div>
+
+    </div>
+   
+</div>
+<!--------about-------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images\user.avif" alt="user-photo">
+
+            </div>
+              <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>
+    Hello! I am a passionate <strong>Front-End Developer</strong> who loves
+    transforming creative ideas into interactive and user-friendly digital
+    experiences. My journey into web development began with a fascination for
+    design and technology, and over time, I have built a strong foundation in
+    HTML, CSS, and JavaScript.
+    I enjoy working with frameworks and libraries like React, Tailwind CSS, and
+    Bootstrap to speed up development and maintain a high level of efficiency.
+    My workflow is powered by attention to detail, problem-solving skills, and
+    the ability to adapt quickly to new tools and trends in the ever-changing
+    web ecosystem.
+    My goal is to continue learning, experimenting, and
+    growing as a developer while contributing to impactful projects that make a
+    difference.
+  </p>
+  <div class="tab-titles">
+    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+    <p class="tab-links">Projects</p>
+    <p class="tab-links" onclick="opentab('education')">Education</p>
+  </div>
+  <div class="tab-content active-tab" id="skills">
+    <ul>
+        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+        <li><span>Web Development</span><br>Designing Web portals</li>
+        <li><span>Digital Marketing</span><br>Building digital marketing connections</li>
+    </ul>
+  </div>
+  <div class="tab-content" id="experience">
+    <ul>
+        <li><span>2021 - Current</span><br>UI/UX Design Training at ET</li>
+        <li><span>2022 - 2023</span><br>Team Lead at StarApp LLC.</li>
+        <li><span>2019 - 2022</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+        <li><span>2018 - 2020</span><br>Internship at Webel</li>
+    </ul>
+  </div>
+  <div class="tab-content" id="education">
+    <ul>
+        <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+        <li><span>2018</span><br>BTECH from RCCIIT Kolkata</li>
+        <li><span>2014</span><br>HS from BBGHS New Alipore</li>
+    </ul>
+  </div>
+   
+              </div>
+        </div>
+    </div>
+</div>
+<!-- -------------services------------ -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <h2>Front-end Development</h2>
+            <p>ggferbfkjhroihgkrnkjnrgoirjiogjrjgnrkgnkrnkgr.</p>
+            <a href="#" >Learn more</a>
+          </div>     
+          <div>
+            <h2>Web Design</h2>
+            <p>ggferbfkjhroihgkrnkjnrgoirjiogjrjgnrkgnkrnkgr.</p>
+            <a href="#" >Learn more</a>
+          </div>     
+        </div>
+    </div>
+ </div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-content");
+    function opentab(tabName){
+         for(tablink of tablinls){
+            tablink.classList.remove("active-link");
+
+         }
+          for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-link");
+            
+         }
+          for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            
+         }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabName).classList.add("active-tab");
+    }
+</script>
+    </body>
+</html>
